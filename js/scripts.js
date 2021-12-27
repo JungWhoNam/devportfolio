@@ -10,6 +10,16 @@
     portfolio website.
 */
 
+const accordions = document.getElementsByClassName("accordion");
+const details = document.getElementsByClassName("project-detail");
+for (let i = 0; i < accordions.length; i++) {
+    accordions[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        details[i].style.maxHeight = details[i].style.maxHeight ?
+            null : details[i].scrollHeight + "px";
+    });
+}
+
 (function($) {
 
     // Remove no-js class
