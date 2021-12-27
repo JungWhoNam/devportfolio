@@ -227,6 +227,7 @@ footer {
     max-height: 1080px;
     background: url(../images/lead-bg.jpg);
     background-size: cover;
+    background-position: center center;
     padding: 15px;
     overflow: hidden;
 }
@@ -370,7 +371,8 @@ footer {
     color: #7e8890;
     margin: 0 0 15px 0;
 }
-.vtimeline-content p {
+.vtimeline-content p,
+.vtimeline-content li {
     color: #74808a;
     font-size: 0.9em;
     margin: 0;
@@ -469,8 +471,8 @@ footer {
 }
 .project-info {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    /* top: 50%;
+    transform: translateY(-50%); */
     margin-left: 300px;
     padding: 15px;
 }
