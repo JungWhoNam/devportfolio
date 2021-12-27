@@ -449,6 +449,35 @@ footer {
 .education-block ul {
     padding: 0 0 0 15px;
 }
+#publication {
+    padding: 50px 15px 20px 15px;
+    border-bottom: 1px solid #dcd9d9;
+    text-align: center;
+}
+#publication h2 {
+    color: #374054;
+    margin-bottom: 50px;
+}
+.publication-block {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+    border: 1px solid #dcd9d9;
+    text-align: left;
+}
+.publication-block h3 {
+    font-weight: 500;
+    color: #374054;
+    clear: both;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
+.publication-block ul {
+    margin: 0;
+    color: #74808a;
+    font-size: 0.9em;
+    padding: 0 0 0 15px;
+}
 #projects {
     padding: 50px 15px;
     border-bottom: 1px solid #dcd9d9;
