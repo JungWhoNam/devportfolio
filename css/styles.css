@@ -505,6 +505,7 @@ footer {
     transform: translateY(-50%); */
     margin-left: 300px;
     padding: 15px;
+    text-align: left;
 }
 .project-info h3 {
     font-size: 1.5em;
@@ -572,6 +573,12 @@ footer {
     font-weight: 500;
     color: #374054;
     margin: 15px 0 0 0;
+}
+.project-detail h5 {
+    font-size: 1.0em;
+    color: #374054;
+    font-weight: 500;
+    margin: 0 0 0 0;
 }
 .project-detail p {
     color: #74808a;

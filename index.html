@@ -92,15 +92,14 @@
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/projects/Worlds-in-Wedges.png"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>Comparative Immersive Visualization of Spatial 3D Data</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            Virtual reality (VR) environments are typically designed so users feel present in a single virtual world at a time, but this creates a problem for applications that require visual comparisons (e.g., forest scientists comparing multiple data-driven virtual forests). To address this, we developed a 3D user interface and visualization technique that divides the virtual space surrounding the viewer into pie-slice shaped volumetric wedges and fills each wedge with a different virtual world. By stacking the wedges around a common axis and placing the tracked user at the center, it is possible to create an immersive juxtaposition of spatial data, where the user may look around, using head-tracked stereoscopic graphics to compare multiple worlds. The interface supports navigation, selection, and view manipulation.
                         </p>
-                        <a href="#">View Project</a>
                     </div>
                     <!-- End .project-info -->
                     <div class="project-detail">
@@ -108,37 +107,34 @@
                         <div class ="video-frame">
                             <iframe src="https://www.youtube.com/embed/okRE3JHs4SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
-                        <h4>My Role </h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, fugit voluptates provident non eveniet nostrum ex dolor porro commodi ipsa! Ullam doloribus quos repudiandae repellendus iusto maiores totam architecto quia.
-                        </p>
-                        <h4>Technology</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quo iure commodi, eligendi ratione doloribus tempora, dolore ea laboriosam explicabo culpa accusantium! Sit, aperiam. Laudantium animi optio ipsam molestiae nostrum.
-                        </p> 
-                        <h4> Publication Abstract </h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quo iure commodi, eligendi ratione doloribus tempora, dolore ea laboriosam explicabo culpa accusantium! Sit, aperiam. Laudantium animi optio ipsam molestiae nostrum.
-                        </p>
+                        <hr>
+                        <div>
+                            <h4> Conference Article </h4>
+                            <p>
+                                Jung Who Nam, Krista McCullough, Joshua Tveite, Maria M. Espinosa, Charles H. Perry, Barry T. Wilson, Daniel F. Keefe. “Worlds-in-Wedges: Combining WIMs and Portals to Support Comparative Immersive Visualization of Forestry Data”. IEEE VR, Mar 2019.
+                            </p>
+                            <h5>Abstract</h5>
+                            <p>
+                                Virtual reality (VR) environments are typically designed so users feel present in a single virtual world at a time, but this creates a problem for applications that require visual comparisons (e.g., forest scientists comparing multiple data-driven virtual forests). To address this, we present Worlds-in-Wedges, a 3D user interface and visualization technique that supports comparative immersive visualization by dividing the virtual space surrounding the user into volumetric wedges. There are three visual/interactive levels. The first, worlds-in-context, visualizes high-level relationships between the worlds (e.g., a map for worlds that are related in space). The second level, worlds-in-miniature, is a multi-instance implementation of the World-in-Miniature technique extended to support mutlivariate glyph visualization. The third level, worlds-in-wedges, displays multiple large-scale worlds in wedges that act as volumetric portals. The interface supports navigation, selection, and view manipulation. Since the techniques were inspired directly by problems facing forest scientists, the interface was evaluated by building a complete multivariate data visualization of the US Forest Service Forest Inventory and Analysis public dataset. Scientist user feedback and lessons from iterative design are reported.
+                            </p>
+                        </div>
+                        <hr>
+                        <div>
+                            <h4>My Role </h4>
+                            <p>
+                                Through regular meetings with our forestry researcher collaborators, I and my advisor designed and developed the World-in-Wedges technique to support simultaneous comparisons of multiple data-driven virtual worlds. I worked closely with two undergraduate students: an art student who designed data glyphs and a computer science student implemented elevations of terrains.
+                            </p>
+                            <h4>Technology</h4>
+                            <h5>Unity3D, C#, custom HLSL/Cg shaders, R, Blender</h5>
+                            <p>
+                                The application is built in Unity3D and advanced computer graphics techniques were employed for creating custom effects.
+                                In order to simultaneously show multiple environments, stencil buffer and a multi-pass technique are used. To setup the stencil buffer, an inverted-sphere is rendered with a custom fragment shader that computes the wedge shapes and outputs a unique ID number to the stencil buffer for each wedge. Then, in a second pass, each world is rendered using a stencil test that passes only for the corresponding wedge.
+                                A custom geometry shader renders over 10,000 spots on the U.S. map. A R-script was written to generate binary files from preprocessed <a href="https://www.fia.fs.fed.us/library/database-documentation/" target="_blank">the US Forest Inventory and Analysis dataset</a> to speed up the loading process of the forestry data. A custom fragment shader creates more natural ground textures, which alternates between two textures based on Perlin noise.
+                            </p>
+                        </div>
                     </div>
                     <!-- End .project-detail -->
                     <button class="accordion">Project Video & Details</button>
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
             </div>
