@@ -137,6 +137,51 @@
                     <button class="accordion">Project Video & Details</button>
                 </div>
                 <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Interactive Installation of Virtual Gesture Sculpture</h3>
+                        <p>
+                            This installation visualizes the virtual sculpting process for gallery visitors using a flat panel display that acts like two synchronized windows into the artist’s space. The left half of the visualization uses the video stream data to create a virtual window into the physical space of the Cave at the time the artwork was created, while the right half of the visualization uses 3D computer graphics to create a window into the virtual space of the sculpture. Both visualizations animate synchronously to convey the progression of the artwork over time.
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+                    <div class="project-detail">
+                        <hr>
+                        <div class ="video-frame">
+                            <iframe src="https://www.youtube.com/embed/_0ffZbVUWWE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <hr>
+                        <div>
+                            <h4> Journal Article </h4>
+                            <p>
+                                Jung Who Nam & Daniel F. Keefe. “Spatial Correlation: An Interactive Display of Virtual Gesture Sculpture”. IEEE VIS Arts Program, 2014, also appeared in Leonardo Journal, Feb 2017
+                            </p>
+                            <h5>Abstract</h5>
+                            <p>
+                                Spatial Correlation is an interactive digital artwork that provides a new window into the process of creating freeform handcrafted virtual sculptures while standing in an immersive Cave virtual reality (VR) environment. The piece originates in the lab, where the artist’s full-body, dance-like sculpting process is recorded using a combination of spatial tracking devices and an array of nine synchronized video cameras. Later, in the gallery, these raw data are reinterpreted as part of an interactive visualization that relates the three spaces in which the sculpture exists: 1) the physical lab/studio space in which the sculpture was created, 2) the digital virtual space in which the sculpture is mathematically defined and stored, and 3) the physical gallery space in which viewers now interact with the sculpture.
+                            </p>
+                        </div>
+                        <hr>
+                        <div>
+                            <h4>My Role </h4>
+                            <p>
+                                I was responsible for researching, designing, and implementing the technological side of this interactive installation. I worked with a fellow graduate student who focused on extending his immersive drawing system to generate a file containing the sculpting process. The sculpting in the CAVE was done by our advisor. I built a custom camera rig capturing his live-performance and built the installation system conveying the progression of the virtual gesture sculpture in both digital and physical spaces.
+                            </p>
+                            <h4>Technology</h4>
+                            <h5>Microsoft Kinect V1, Processing, custom GLSL shaders</h5>
+                            <p>
+                                During the sculpting process, a custom camera rig captures synchronized video of the artist’s physical movements within the CAVE space from 9 different viewpoints arranged in a semi-circle around the opening of the CAVE. At the gallery, a depth camera captures positions of audience, which are used to determine the viewing direction. When there are multiple users, the user closest the sensor is the tracking user. The installation system was built in Processing, and custom GLSL shaders were implemented to produce Bloom effects at an interactive rate.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End .project-detail -->
+                    <button class="accordion">Project Video & Details</button>
+                </div>
+                <!-- End .project -->
             </div>
         </div>
     </div>
