@@ -98,7 +98,7 @@
                     <div class="project-info">
                         <h3>Comparative Immersive Visualization of Spatial 3D Data</h3>
                         <p>
-                            Virtual reality (VR) environments are typically designed so users feel present in a single virtual world at a time, but this creates a problem for applications that require visual comparisons (e.g., forest scientists comparing multiple data-driven virtual forests). To address this, we developed a 3D user interface and visualization technique that divides the virtual space surrounding the viewer into pie-slice shaped volumetric wedges and fills each wedge with a different virtual world. By stacking the wedges around a common axis and placing the tracked user at the center, it is possible to create an immersive juxtaposition of spatial data, where the user may look around, using head-tracked stereoscopic graphics to compare multiple worlds. The interface supports navigation, selection, and view manipulation.
+                            Virtual reality (VR) environments are typically designed so users feel present in a single virtual world at a time, but this creates a problem for applications that require visual comparisons (e.g., forest scientists comparing multiple data-driven virtual forests). To address this, we developed a 3D user interface and visualization technique that creates an immersive juxtaposition of spatial data, where the user may look around, using head-tracked stereoscopic graphics to compare multiple worlds. The technique also supports navigation, selection, and view manipulation.
                         </p>
                     </div>
                     <!-- End .project-info -->
@@ -172,7 +172,7 @@
                                 I was responsible for researching, designing, and implementing the technological side of this interactive installation. I worked with a fellow graduate student who focused on extending his immersive drawing system to generate a file containing the sculpting process. The sculpting in the CAVE was done by our advisor. I built a custom camera rig capturing his live-performance and built the installation system conveying the progression of the virtual gesture sculpture in both digital and physical spaces.
                             </p>
                             <h4>Technology</h4>
-                            <h5>Microsoft Kinect V1, Processing, custom GLSL shaders</h5>
+                            <h5>Microsoft Kinect, Processing, custom GLSL shaders</h5>
                             <p>
                                 During the sculpting process, a custom camera rig captures synchronized video of the artist’s physical movements within the CAVE space from 9 different viewpoints arranged in a semi-circle around the opening of the CAVE. At the gallery, a depth camera captures positions of audience, which are used to determine the viewing direction. When there are multiple users, the user closest the sensor is the tracking user. The installation system was built in Processing, and custom GLSL shaders were implemented to produce Bloom effects at an interactive rate.
                             </p>
@@ -180,6 +180,36 @@
                     </div>
                     <!-- End .project-detail -->
                     <button class="accordion">Project Video & Details</button>
+                </div>
+                <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/projects/Interactive-MonaLisa.png"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Interactive Mona Lisa</h3>
+                        <p>
+                            For a graduate-level Spatial UI seminar course, I designed and developed an interactive art installation. In Interactive Mona Lisa, the user interacts with a digital image of the Mona Lisa, and the Mona Lisa is programmed to react to the user’s distance from the painting by displaying facial emotions. When the user is far away from the painting, the Mona Lisa feels lonely so she is sad. As the user walks towards her, she begins to smile. However, if the user walks too close to her, she is shocked at first. If the user gets even closer, she begins to get angry. When the user steps back, respecting her space, she begins to smile.
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+                    <div class="project-detail">
+                        <hr>
+                        <div class ="video-frame">
+                            <iframe src="images/projects/Interactive-MonaLisa (poster).pdf" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <hr>
+                        <div>
+                            <h4>Technology</h4>
+                            <h5>Microsoft Kinect, Processing, Photoshop, Ekman's Emotions Revealed</h5>
+                            <p>
+                                In order to create an animation of varying emotion, I created a series of images using Adobe Photoshop’s warp tool. The places to morph and the degrees of the distortion to deliver a certain emotion are referenced from a psychologist Paul Ekman’s Emotions Revealed. For tracking, I used a depth sensor Microsoft Kinect. I tracked the user’s head position to compute how far the user is from the painting. I also tracked different joints of the user’s body (such as arms and shoulders) to compute how the fast user is moving.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End .project-detail -->
+                    <button class="accordion">Project Poster & Details</button>
                 </div>
                 <!-- End .project -->
             </div>
