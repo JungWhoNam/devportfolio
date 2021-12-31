@@ -139,6 +139,52 @@
                 <!-- End .project -->
                 <div class="project shadow-large">
                     <div class="project-image">
+                        <img src="images/projects/Linked-View-MobileVR.png"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Linked View Visualization Using Mobile VR</h3>
+                        <p>
+                            Working with the U.S. National Forest Service, we developed a prototype that can provide more engaging modes of presenting data to the public to be used in settings, such as in K-12 classrooms to lead students in virtual field trips to the forests. With a pair of low-cost lenses fitted over the top third of the screen, the user can walk in data-driven forests. The bottom two-thirds of the device is also used for data visualization, showing details such as carbon content not visible in the 3D view. Both views are synchronized in that the user can seamlessly switch the focus.
+                        </p>    
+                    </div>
+                    <!-- End .project-info -->
+                    <div class="project-detail">
+                        <hr>
+                        <div class ="video-frame">
+                            <iframe src="https://www.youtube.com/embed/vhv6tA6IIUk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <hr>
+                        <div class ="video-frame">
+                            <iframe src="images/projects/Linked-View-MobileVR (poster).pdf" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <hr>
+                        <div>
+                            <h4>Poster</h4>
+                            <p>
+                                <strong>(Best Poster Award)</strong><br>
+                                Jung Who Nam, Charles H. Perry, Barry T. Wilson, Daniel F. Keefe, “Linked View Visualization Using Clipboard-Style Mobile VR: Application to Communicating Forestry Data”. IEEE VIS, 2019
+                            </p>
+                        </div>
+                        <hr>
+                        <div>
+                            <h4>My Role</h4>
+                            <p>
+                                I extended an Unity3D VR application to create data-driven forests and upgraded the parts handling the multi-touch and headtracking interactions. I also worked on designing UI images and textures for leaves and barks to represent different tree species.
+                            </p>
+                            <h4>Technology</h4>
+                            <h5>Mobile VR, multi-touch gestures, custom HLSL/Cg shaders, Photoshop</h5>
+                            <p>
+                                The application is built in Unity3D. Interaction with the 3D view is done through physical rotation of the device, which is determined by accessing device’s gyroscope. Interaction with the 2D view is accomplished via multi-touch input. The map can be translated, rotated, and zoomed. These interactions immediately update the linked 3D view so interaction with the map serves as a VR navigation technique. A custom fragment shader creates more natural ground textures, which alternates between two textures based on Perlin noise. Another shader creates glyphs on the 2D map view. Since the sampling pattern used by the scientists results in quite a bit of blank space in the scene, we also include randomly placed billboard trees in the style of architectural models to indicate uncertainty in the data in these sparse regions.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End .project-detail -->
+                    <button class="accordion">Project Video & Details</button>
+                </div>
+                <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project-image">
                         <img src="images/projects/Spatial-Correlation.png"/>
                     </div>
                     <!-- End .project-image -->
