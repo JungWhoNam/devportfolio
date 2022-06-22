@@ -501,34 +501,91 @@ footer {
     padding: 0 0 0 15px;
 }
 #publication {
-    padding: 50px 15px 20px 15px;
+    padding: 50px 15px;
     border-bottom: 1px solid #dcd9d9;
     text-align: center;
 }
-#publication h2 {
-    color: #374054;
-    margin-bottom: 50px;
+#publication img {
+    width: 280px;
+    height: 280px;
+    margin: 0 0 30px 0;
+    border: 1px solid lightgray;
 }
-.publication-block {
-    max-width: 900px;
-    margin: 0 auto 30px auto;
-    padding: 15px;
-    border: 1px solid #dcd9d9;
+#publication .pub-info {
     text-align: left;
-    background: #fff;
+    margin: 0 0 30px 0;
 }
-.publication-block h3 {
-    font-weight: 500;
+#publication .pub-info ul {
+    margin: 0 0 0 0;
+    padding: 0;
+}
+#publication .pub-info li {
+    display: inline-block;
+    font-size: 1.25em;
+    list-style: none;
+    padding-right: 10px;
+}
+#publication hr {
+    width:98%;
+    border: none;
+    height: 1px;
+    background-color: lightgray;
+}
+.pub-type {
+    display: inline-block;
+    padding: 4px 6px;
+    border-radius: 6px;
+    font-size: 0.84em;
+}
+.pub-type.journal {
+    color: white;
+    background-color: #5da88d;
+}
+.pub-type.conference {
+    color: white;
+    background-color: #f37248;
+}
+.pub-type.book {
+    color: white;
+    background-color: #91a5b1;
+}
+.pub-type.abstract {
+    color: white;
+    background-color: darkgray;
+}
+.pub-title {
+    font-size: 1.2em;
+    font-weight: bold;
     color: #374054;
-    clear: both;
-    font-weight: 500;
-    margin: 0 0 15px 0;
+    margin: 10px 0 6px 0;
 }
-.publication-block ul {
-    margin: 0;
+.pub-author {
+    font-size: 1.0em;
+    color: #374054;
+    margin: 0 0 6px 0;
+}
+.pub-venue {
     color: #74808a;
-    font-size: 0.9em;
-    padding: 0 0 0 15px;
+    margin: 0 0 0px 0;
+    font-size: 1em;
+    margin: 0 0 6px 0;
+}
+.pub-link ul {
+    margin: 0 0 0 0;
+    padding: 0;
+}
+.pub-link li {
+    display: inline-block;
+    font-size: 1.25em;
+    list-style: none;
+}
+.pub-link a {
+    display: block;
+    color: #74808a;
+    padding: 10px;
+}
+.pub-link a:hover {
+    color: #a0cfee;
 }
 #projects {
     padding: 50px 15px;
