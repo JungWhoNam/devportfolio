@@ -165,22 +165,24 @@ footer {
     color: #a0cfee;
 }
 .social {
-    text-align: right;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
 }
 .social ul {
-    margin: 5px 0 0 0;
+    margin: 0 0 0 0;
     padding: 0;
 }
 .social li {
     display: inline-block;
-    font-size: 1.25em;
+    font-size: 1.5em;
     list-style: none;
 }
 .social a {
     display: block;
-    /* color: #74808a; */
+    color: #74808a;
     /* color: #a0cfee; */
-    color: #ffffff;
+    /* color: #ffffff; */
     padding: 10px;
 }
 .social a:hover {
@@ -311,6 +313,7 @@ footer {
         transform: scale(1, 1);
     }
 }
+
 #about {
     padding: 75px 15px;
     border-bottom: 1px solid #dcd9d9;
@@ -321,6 +324,46 @@ footer {
 #about p {
     color: #74808a;
     margin: 0;
+}
+#about .contact {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+#about .contact img {
+    width: 200px;
+    height: 200px;
+    margin: 0 0 30px 0;
+}
+#about .name {
+    text-align: center;
+    position: relative;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+}
+#about .name:after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    height: 1px;
+    width: 140px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #3498db;
+}
+#about .btn-rounded {
+    display: inline-block;
+    color: #74808a;
+    padding: 4px 8px;
+    border: 2px solid #74808a;
+    border-radius: 10px;
+    transition: 0.5s ease all;
+}
+#about .btn-rounded:hover {
+    color: #74808a;
+    background: #a0cfee;
+    text-decoration: none;
 }
 #experience {
     padding: 50px 15px;
