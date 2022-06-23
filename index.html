@@ -28,19 +28,16 @@
                 <a href="#about">About</a>
             </li>
             <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
                 <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
             </li>
             <li>
                 <a href="#publication">Publications</a>
             </li>
             <li>
-                <a href="#contact">Contact</a>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#about">Contact</a>
             </li>
         </ul>
     </header>
@@ -102,6 +99,41 @@
         </div>
     </div>
     <!-- End #about -->
+
+    <div id="education" class="background-alt">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>University of Minnesota, Twin Cities</h3>
+            <span class="education-date">2014 – July 2022</span>
+            <h4>Ph.D. in Computer Science</h4>
+            <ul>
+                <li>Advisor: Daniel F. Keefe (<a href=https://ivlab.cs.umn.edu/ target="_blank">IVLab</a>)</li>
+                <li>Specializations: Scientific Visualization, Mixed Reality, Data Storytelling, Collaboration</li>
+                <li>Thesis: Everyday Scientific Visualization: Making 3D Visualization Techniques Accessible for Day-To-Day Team-Science for Collaboration and Analysis (<a href=https://drive.google.com/file/d/1YPHDhS2W60221d8zFn3x2yQW1USpt_py/view?usp=sharing target="_blank">pdf</a>)</li>
+                <li>Took a three-year of leave of absence for the mendatory army service (2019-2022)</li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+        <div class="education-block">
+            <h3>University of Minnesota, Twin Cities</h3>
+            <span class="education-date">2012 – 2014</span>
+            <h4>M.S. in Computer Science</h4>
+            <ul>
+                <li>Specializations: Computer Graphics, Mixed Reality</li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+        <div class="education-block">
+            <h3>University of Minnesota, Twin Cities</h3>
+            <span class="education-date">2008 – 2012</span>
+            <h4>B.S. in Computer Science</h4>
+            <ul>
+                <li>Specializations: Computer Graphics, User Interfaces</li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
 
     <div id="publication">
         <h2 class="heading">Publications</h2>
@@ -333,265 +365,6 @@
     </div>
     <!-- End #about -->
 
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/publications/VR2019_Worlds-in-Wedges.png"/>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Comparative Immersive Visualization of Spatial 3D Data</h3>
-                        <p>
-                            Virtual reality (VR) environments are typically designed so users feel present in a single virtual world at a time, but this creates a problem for applications that require visual comparisons (e.g., forest scientists comparing multiple data-driven virtual forests). To address this, we developed a 3D user interface and visualization technique that creates an immersive juxtaposition of spatial data, where the user may look around, using head-tracked stereoscopic graphics to compare multiple worlds. The technique also supports navigation, selection, and view manipulation.
-                        </p>
-                    </div>
-                    <!-- End .project-info -->
-                    <div class="project-detail">
-                        <hr>
-                        <div class ="video-frame">
-                            <iframe src="https://www.youtube.com/embed/okRE3JHs4SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <hr>
-                        <div>
-                            <h4> Conference Article </h4>
-                            <p>
-                                Jung Who Nam, Krista McCullough, Joshua Tveite, Maria M. Espinosa, Charles H. Perry, Barry T. Wilson, Daniel F. Keefe. “Worlds-in-Wedges: Combining WIMs and Portals to Support Comparative Immersive Visualization of Forestry Data”. IEEE VR, Mar 2019.
-                            </p>
-                            <h5>Abstract</h5>
-                            <p>
-                                Virtual reality (VR) environments are typically designed so users feel present in a single virtual world at a time, but this creates a problem for applications that require visual comparisons (e.g., forest scientists comparing multiple data-driven virtual forests). To address this, we present Worlds-in-Wedges, a 3D user interface and visualization technique that supports comparative immersive visualization by dividing the virtual space surrounding the user into volumetric wedges. There are three visual/interactive levels. The first, worlds-in-context, visualizes high-level relationships between the worlds (e.g., a map for worlds that are related in space). The second level, worlds-in-miniature, is a multi-instance implementation of the World-in-Miniature technique extended to support mutlivariate glyph visualization. The third level, worlds-in-wedges, displays multiple large-scale worlds in wedges that act as volumetric portals. The interface supports navigation, selection, and view manipulation. Since the techniques were inspired directly by problems facing forest scientists, the interface was evaluated by building a complete multivariate data visualization of the US Forest Service Forest Inventory and Analysis public dataset. Scientist user feedback and lessons from iterative design are reported.
-                            </p>
-                        </div>
-                        <hr>
-                        <div>
-                            <h4>My Role </h4>
-                            <p>
-                                Through regular meetings with our forestry researcher collaborators, I and my advisor designed and developed the World-in-Wedges technique to support simultaneous comparisons of multiple data-driven virtual worlds. I worked closely with two undergraduate students: an art student who designed data glyphs and a computer science student implemented elevations of terrains.
-                            </p>
-                            <h4>Technology</h4>
-                            <h5>Unity3D, C#, custom HLSL/Cg shaders, R, Blender</h5>
-                            <p>
-                                The application is built in Unity3D and advanced computer graphics techniques were employed for creating custom effects.
-                                In order to simultaneously show multiple environments, stencil buffer and a multi-pass technique are used. To setup the stencil buffer, an inverted-sphere is rendered with a custom fragment shader that computes the wedge shapes and outputs a unique ID number to the stencil buffer for each wedge. Then, in a second pass, each world is rendered using a stencil test that passes only for the corresponding wedge.
-                                A custom geometry shader renders over 10,000 spots on the U.S. map. A R-script was written to generate binary files from preprocessed <a href="https://www.fia.fs.fed.us/library/database-documentation/" target="_blank">the US Forest Inventory and Analysis dataset</a> to speed up the loading process of the forestry data. A custom fragment shader creates more natural ground textures, which alternates between two textures based on Perlin noise.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End .project-detail -->
-                    <button class="accordion">Project Video & Details</button>
-                </div>
-                <!-- End .project -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/publications/VIS2019_Linked-View-MobileVR.png"/>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Linked View Visualization Using Mobile VR</h3>
-                        <p>
-                            Working with the U.S. National Forest Service, we developed a prototype that can provide more engaging modes of presenting data to the public to be used in settings, such as in K-12 classrooms to lead students in virtual field trips to the forests. With a pair of low-cost lenses fitted over the top third of the screen, the user can walk in data-driven forests. The bottom two-thirds of the device is also used for data visualization, showing details such as carbon content not visible in the 3D view. Both views are synchronized in that the user can seamlessly switch the focus.
-                        </p>    
-                    </div>
-                    <!-- End .project-info -->
-                    <div class="project-detail">
-                        <hr>
-                        <div class ="video-frame">
-                            <iframe src="https://www.youtube.com/embed/vhv6tA6IIUk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <hr>
-                        <div class ="video-frame">
-                            <iframe src="images/publications/VIS2019_Linked-View-MobileVR (poster).pdf" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <hr>
-                        <div>
-                            <h4>Poster</h4>
-                            <p>
-                                <strong>(Best Poster Award)</strong><br>
-                                Jung Who Nam, Charles H. Perry, Barry T. Wilson, Daniel F. Keefe, “Linked View Visualization Using Clipboard-Style Mobile VR: Application to Communicating Forestry Data”. IEEE VIS, 2019
-                            </p>
-                        </div>
-                        <hr>
-                        <div>
-                            <h4>My Role</h4>
-                            <p>
-                                I extended an Unity3D VR application to create data-driven forests and upgraded the parts handling the multi-touch and headtracking interactions. I also worked on designing UI images and textures for leaves and barks to represent different tree species.
-                            </p>
-                            <h4>Technology</h4>
-                            <h5>Mobile VR, multi-touch gestures, custom HLSL/Cg shaders, Photoshop</h5>
-                            <p>
-                                The application is built in Unity3D. Interaction with the 3D view is done through physical rotation of the device, which is determined by accessing device’s gyroscope. Interaction with the 2D view is accomplished via multi-touch input. The map can be translated, rotated, and zoomed. These interactions immediately update the linked 3D view so interaction with the map serves as a VR navigation technique. A custom fragment shader creates more natural ground textures, which alternates between two textures based on Perlin noise. Another shader creates glyphs on the 2D map view. Since the sampling pattern used by the scientists results in quite a bit of blank space in the scene, we also include randomly placed billboard trees in the style of architectural models to indicate uncertainty in the data in these sparse regions.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End .project-detail -->
-                    <button class="accordion">Project Video & Details</button>
-                </div>
-                <!-- End .project -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/publications/VISAP2014_Spatial-Correlation.png"/>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Interactive Installation of Virtual Gesture Sculpture</h3>
-                        <p>
-                            This installation visualizes the virtual sculpting process for gallery visitors using a flat panel display that acts like two synchronized windows into the artist’s space. The left half of the visualization uses the video stream data to create a virtual window into the physical space of the Cave at the time the artwork was created, while the right half of the visualization uses 3D computer graphics to create a window into the virtual space of the sculpture. Both visualizations animate synchronously to convey the progression of the artwork over time.
-                        </p>
-                    </div>
-                    <!-- End .project-info -->
-                    <div class="project-detail">
-                        <hr>
-                        <div class ="video-frame">
-                            <iframe src="https://www.youtube.com/embed/_0ffZbVUWWE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <hr>
-                        <div>
-                            <h4> Journal Article </h4>
-                            <p>
-                                Jung Who Nam & Daniel F. Keefe. “Spatial Correlation: An Interactive Display of Virtual Gesture Sculpture”. IEEE VIS Arts Program, 2014, also appeared in Leonardo Journal, Feb 2017
-                            </p>
-                            <h5>Abstract</h5>
-                            <p>
-                                Spatial Correlation is an interactive digital artwork that provides a new window into the process of creating freeform handcrafted virtual sculptures while standing in an immersive Cave virtual reality (VR) environment. The piece originates in the lab, where the artist’s full-body, dance-like sculpting process is recorded using a combination of spatial tracking devices and an array of nine synchronized video cameras. Later, in the gallery, these raw data are reinterpreted as part of an interactive visualization that relates the three spaces in which the sculpture exists: 1) the physical lab/studio space in which the sculpture was created, 2) the digital virtual space in which the sculpture is mathematically defined and stored, and 3) the physical gallery space in which viewers now interact with the sculpture.
-                            </p>
-                        </div>
-                        <hr>
-                        <div>
-                            <h4>My Role </h4>
-                            <p>
-                                I was responsible for researching, designing, and implementing the technological side of this interactive installation. I worked with a fellow graduate student who focused on extending his immersive drawing system to generate a file containing the sculpting process. The sculpting in the CAVE was done by our advisor. I built a custom camera rig capturing his live-performance and built the installation system conveying the progression of the virtual gesture sculpture in both digital and physical spaces.
-                            </p>
-                            <h4>Technology</h4>
-                            <h5>Microsoft Kinect, Processing, custom GLSL shaders</h5>
-                            <p>
-                                During the sculpting process, a custom camera rig captures synchronized video of the artist’s physical movements within the CAVE space from 9 different viewpoints arranged in a semi-circle around the opening of the CAVE. At the gallery, a depth camera captures positions of audience, which are used to determine the viewing direction. When there are multiple users, the user closest the sensor is the tracking user. The installation system was built in Processing, and custom GLSL shaders were implemented to produce Bloom effects at an interactive rate.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End .project-detail -->
-                    <button class="accordion">Project Video & Details</button>
-                </div>
-                <!-- End .project -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/projects/Interactive-MonaLisa.png"/>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Interactive Mona Lisa</h3>
-                        <p>
-                            For a graduate-level Spatial UI seminar course, I designed and developed an interactive art installation. In Interactive Mona Lisa, the user interacts with a digital image of the Mona Lisa, and the Mona Lisa is programmed to react to the user’s distance from the painting by displaying facial emotions. When the user is far away from the painting, the Mona Lisa feels lonely so she is sad. As the user walks towards her, she begins to smile. However, if the user walks too close to her, she is shocked at first. If the user gets even closer, she begins to get angry. When the user steps back, respecting her space, she begins to smile.
-                        </p>
-                    </div>
-                    <!-- End .project-info -->
-                    <div class="project-detail">
-                        <hr>
-                        <div class ="video-frame">
-                            <iframe src="images/projects/Interactive-MonaLisa (poster).pdf" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <hr>
-                        <div>
-                            <h4>Technology</h4>
-                            <h5>Microsoft Kinect, Processing, Photoshop, Ekman's Emotions Revealed</h5>
-                            <p>
-                                In order to create an animation of varying emotion, I created a series of images using Adobe Photoshop’s warp tool. The places to morph and the degrees of the distortion to deliver a certain emotion are referenced from a psychologist Paul Ekman’s Emotions Revealed. For tracking, I used a depth sensor Microsoft Kinect. I tracked the user’s head position to compute how far the user is from the painting. I also tracked different joints of the user’s body (such as arms and shoulders) to compute how the fast user is moving.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End .project-detail -->
-                    <button class="accordion">Project Poster & Details</button>
-                </div>
-                <!-- End .project -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/publications/Book2022_Prop-Interfaces-Pen.png"/>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Prop-based 3D User Interfaces</h3>
-                        <p>
-                            For exploring 3DUI techniques, I designed and developed several prototypes that use prop-based 3D interfaces for data exploration. In the first prototype, building upon the work by Lee and Ishii (2010), I developed a collapsible tool for interacting with visual elements beneath the surface of data physicalizations, e.g. for specifying seeding placements of streamlines inside a heart. In the second prototype, 3D printed data props are used to interact with fluid flow simulations projected on a tabletop display.
-                        </p>
-                    </div>
-                    <!-- End .project-info -->
-                    <div class="project-detail">
-                        <hr>
-                        <div class ="video-frame">
-                            <iframe src="videos/Prop-Interfaces-Pen.mp4" autoplay="false" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <hr>
-                        <img style='height: 100%; width: 100%' src="images/projects/Prop-Interfaces-Wings.jpg">
-                        <!-- <hr>
-                        <div>
-                            <h4> Book Chapter </h4>
-                            <p>
-                                Daniel F. Keefe, Bridger Herman, Jung Who Nam, Daniel Orban and Seth Johnson. Hybrid Data Constructs: Interacting with Biomedical Data in Augmented Spaces. In Ian Gwilt, editors, Making Data: Materializing Digital Information, chapter 11, Bloomsbury Publishing, 2022.
-                            </p>
-                        </div> -->
-                        <hr>
-                        <div>
-                            <h4>My Role </h4>
-                            <p>
-                                The Interactive Visualization Lab explores ways for providing haptics in analyzing and communicating about data. I built upon the work of fellow lab mates: the 6DoF tracker, 3D-printed props, and the stylus in a CAVE VR environment. For the first prototype, I designed and developed the collapsible part of the stylus and the application for analyzing inner visual elements of a handheld-prop. For the second prototype, I developed the tabletop setting and the application.
-                            </p>
-                            <h4>Technology</h4>
-                            <h5>CAVE, Unity3D, OptiTrak</h5>
-                            <p>
-                                The 6 degree-of-freedom tracking of the props and interfaces is done through OptiTrack motion capture system. The position and orientation are mapped to virtual replicas in a VR environment. The application is built in Unity3D, and it runs in a 4-wall CAVE VR environment. The collapsible parts are made with a rod encompassed with a tube and a spring.
-                            </p>
-                            <h5>3D printer, Unity3D, Vuforia</h5>
-                            <p>
-                                The props are placed on particle simulations projected on the table. Fiducial markers attached to the props are used to track the positions and orientations. The application is built in Unity3D. The props are created in SolidWork and are printed in a 3D printer.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End .project-detail -->
-                    <button class="accordion">Project Video & Details</button>
-                </div>
-                <!-- End .project -->
-            </div>
-        </div>
-    </div>
-    <!-- End #projects -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>University of Minnesota, Twin Cities</h3>
-            <span class="education-date">2014 – July 2022</span>
-            <h4>Ph.D. in Computer Science</h4>
-            <ul>
-                <li>Advisor: Daniel F. Keefe (<a href=https://ivlab.cs.umn.edu/ target="_blank">IVLab</a>)</li>
-                <li>Specializations: Scientific Visualization, Mixed Reality, Data Storytelling, Collaboration</li>
-                <li>Thesis: Everyday Scientific Visualization: Making 3D Visualization Techniques Accessible for Day-To-Day Team-Science for Collaboration and Analysis (<a href=https://drive.google.com/file/d/1YPHDhS2W60221d8zFn3x2yQW1USpt_py/view?usp=sharing target="_blank">pdf</a>)</li>
-                <li>Took a three-year of leave of absence for the mendatory army service (2019-2022)</li>
-            </ul>
-        </div>
-        <!-- End .education-block -->
-        <div class="education-block">
-            <h3>University of Minnesota, Twin Cities</h3>
-            <span class="education-date">2012 – 2014</span>
-            <h4>M.S. in Computer Science</h4>
-            <ul>
-                <li>Specializations: Computer Graphics, Mixed Reality</li>
-            </ul>
-        </div>
-        <!-- End .education-block -->
-        <div class="education-block">
-            <h3>University of Minnesota, Twin Cities</h3>
-            <span class="education-date">2008 – 2012</span>
-            <h4>B.S. in Computer Science</h4>
-            <ul>
-                <li>Specializations: Computer Graphics, User Interfaces</li>
-            </ul>
-        </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
-
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
@@ -644,78 +417,14 @@
     </div>
     <!-- End #experience -->
 
-    <!-- <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <div class="skills-block">
-            <h3>Programming Languages</h3><br>
-            <ul>
-                <li>C#</li>
-                <li>Java</li>
-                <li>C++</li>
-                <li>HLSL/Cg</li>
-                <li>JavaScript</li>
-                <li>TypeScript</li>
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>PHP</li>
-                <li>R</li>
-            </ul>
-        </div>
-        <div class="skills-block">
-            <h3>Development Tools</h3><br>
-            <ul>
-                <li>Unity3D</li>
-                <li>OpenGL</li>
-                <li>Processing</li>
-                <li>Three.js</li>
-                <li>D3.js</li>
-                <li>Google MediaPipe</li>
-                <li>OpenCV</li>
-            </ul>
-        </div>
-        <div class="skills-block">
-            <h3>Interaction Platforms</h3><br>
-            <ul>
-                <li>HTC Vive</li>
-                <li>Oculus Rift</li>
-                <li>Google Cardboard</li>
-                <li>Kinect</li>
-                <li>OptiTrack</li>
-            </ul>
-        </div>
-        <div class="skills-block">
-            <h3>Software</h3><br>
-            <ul>
-                <li>Photoshop</li>
-                <li>Illustrator</li>
-                <li>Shotcut</li>
-                <li>Blender</li>
-                <li>SolidWork</li>
-            </ul>
-        </div>
-    </div> -->
-    <!-- End #skills -->
-
-    <!-- <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/f/xayvnbak">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div> -->
-        <!-- End #contact-form -->
-    <!-- </div> -->
-    <!-- End #contact -->
-
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; 2022 Jung Who Nam
+                        <!-- Copyright &copy; 2022 Jung Who Nam -->
+                        Jung Who Nam
+                        <br>Last updated on Jun. 24, 2022
                     </p>
                 </div>
                 <div class="col-sm-2 top">
@@ -726,24 +435,6 @@
 
                 <div class="col-sm-5 social">
                     <ul>
-                        <li>
-                            <a href="https://github.com/jungwhonam" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/jungwhonam/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <!-- <li>
-                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        </li> -->
                     </ul>
                 </div>
             </div>
