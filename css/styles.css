@@ -506,6 +506,20 @@ footer {
     border-bottom: 1px solid #dcd9d9;
     text-align: center;
 }
+#publication .pub-legend {
+    text-align: center;
+    margin: 0 0 0 0;
+}
+#publication .pub-legend ul {
+    margin: 0 0 0 0;
+    padding: 0;
+}
+#publication .pub-legend li {
+    display: inline-block;
+    font-size: 1.2em;
+    list-style: none;
+    padding-right: 10px;
+}
 #publication img {
     width: 250px;
     height: 250px;
