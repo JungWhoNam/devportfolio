@@ -506,14 +506,14 @@ footer {
     text-align: center;
 }
 #publication img {
-    width: 280px;
-    height: 280px;
-    margin: 0 0 30px 0;
+    width: 250px;
+    height: 250px;
+    /* margin: 0px 0 30px 0; */
     border: 1px solid lightgray;
 }
 #publication .pub-info {
     text-align: left;
-    margin: 0 0 30px 0;
+    margin: 0 0 0 0;
 }
 #publication .pub-info ul {
     margin: 0 0 0 0;
@@ -521,7 +521,7 @@ footer {
 }
 #publication .pub-info li {
     display: inline-block;
-    font-size: 1.25em;
+    font-size: 1.2em;
     list-style: none;
     padding-right: 10px;
 }
@@ -531,60 +531,65 @@ footer {
     height: 1px;
     background-color: lightgray;
 }
-.pub-type {
+#publication .pub-type {
     display: inline-block;
     padding: 4px 6px;
     border-radius: 6px;
     font-size: 0.84em;
 }
-.pub-type.journal {
+#publication .pub-type.journal {
     color: white;
-    background-color: #5da88d;
+    background-color: #377eb8;
 }
-.pub-type.conference {
+#publication .pub-type.conference {
     color: white;
-    background-color: #f37248;
+    background-color: #4daf4a;
 }
-.pub-type.book {
+#publication .pub-type.book {
     color: white;
-    background-color: #91a5b1;
+    background-color: #984ea3;
 }
-.pub-type.abstract {
+#publication .pub-type.abstract {
     color: white;
-    background-color: darkgray;
+    background-color: #ff7f00;
 }
-.pub-title {
+#publication .pub-type.award {
+    color: black;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid black;
+}
+#publication .pub-title {
     font-size: 1.2em;
     font-weight: bold;
     color: #374054;
-    margin: 10px 0 6px 0;
+    margin: 0 0 6px 0;
 }
-.pub-author {
+#publication .pub-author {
     font-size: 1.0em;
     color: #374054;
     margin: 0 0 6px 0;
 }
-.pub-venue {
+#publication .pub-venue {
     color: #74808a;
     margin: 0 0 0px 0;
     font-size: 1em;
     margin: 0 0 6px 0;
 }
-.pub-link ul {
+#publication .pub-link ul {
     margin: 0 0 0 0;
     padding: 0;
 }
-.pub-link li {
+#publication .pub-link li {
     display: inline-block;
-    font-size: 1.25em;
+    font-size: 1.5em;
     list-style: none;
 }
-.pub-link a {
+#publication .pub-link a {
     display: block;
     color: #74808a;
     padding: 10px;
 }
-.pub-link a:hover {
+#publication .pub-link a:hover {
     color: #a0cfee;
 }
 #projects {
