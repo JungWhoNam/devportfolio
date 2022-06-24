@@ -521,6 +521,10 @@ footer {
     list-style: none;
     padding-right: 10px;
 }
+#publication .pub-legned-type {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
 #publication img {
     width: 250px;
     height: 250px;
