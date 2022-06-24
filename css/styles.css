@@ -234,7 +234,8 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    background: url(../images/lead-bg-VR2019-down.jpg);
+    /* background: url(../images/lead-bg-BOOK2022-wings.jpg); */
     background-size: cover;
     background-position: center center;
     padding: 15px;
@@ -274,7 +275,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(33, 125, 187, 0.8);
+    background: rgba(33, 125, 187, 0.7);
     z-index: 1;
 }
 #lead-down {
